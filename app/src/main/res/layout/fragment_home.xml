@@ -1,0 +1,66 @@
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:clickable="true"
+        android:padding="15dp">
+
+        <RelativeLayout
+            android:id="@+id/wrapperSoccers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:visibility="gone">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerSoccers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/inputNameSoccer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_below="@id/wrapperSoccers"
+            android:hint="Nome da pelada" />
+
+        <TextView
+            android:id="@+id/txtTypeCourt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputNameSoccer"
+            android:layout_marginTop="15dp"
+            android:text="Selecione o tipo de Quadra" />
+
+        <android.support.v7.widget.AppCompatSpinner
+            android:id="@+id/spinnerCourt"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_below="@id/txtTypeCourt"
+            android:textSize="15sp" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/spinnerCourt"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="#000000" />
+
+        <Button
+            android:id="@+id/btnAdvanced"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:text="Avançar" />
+
+    </RelativeLayout>
+</layout>

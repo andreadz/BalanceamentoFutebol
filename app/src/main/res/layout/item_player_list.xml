@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/textNamePlayer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Adz" />
+
+        <TextView
+            android:id="@+id/textPlayerPosition"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textNamePlayer"
+            android:layout_marginTop="10dp"
+            android:text="Lateral-direito" />
+
+        <TextView
+            android:id="@+id/textPlayerNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/textNamePlayer"
+            android:text="5,0" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/textPlayerPosition"
+            android:layout_marginTop="10dp"
+            android:background="#8c96a9" />
+
+    </RelativeLayout>
+</layout>
